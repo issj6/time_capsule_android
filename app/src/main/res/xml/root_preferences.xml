@@ -1,0 +1,19 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <PreferenceCategory app:title="基础设置">
+
+        <SwitchPreferenceCompat
+            app:key="bgmSet"
+            app:summaryOff="背景音乐关闭"
+            app:summaryOn="背景音乐开启"
+            app:title="开关背景音乐" />
+        <SwitchPreferenceCompat
+            app:key="emailRemind"
+            app:summaryOff="邮件提醒关闭"
+            app:summaryOn="邮件提醒开启"
+            app:title="开关邮件提醒" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

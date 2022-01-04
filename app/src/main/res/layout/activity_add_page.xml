@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEE"
+    tools:context=".AddPage">
+
+    <EditText
+        android:id="@+id/edt_order_note_text"
+        android:layout_width="330dp"
+        android:layout_height="450dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/white"
+        android:elevation="5dp"
+        android:gravity="top"
+        android:hint="在这里输入你想要写的话吧......"
+        android:minLines="5"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bt2_style"
+        android:text="埋下胶囊"
+        android:onClick="click"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:minHeight="48dp"
+        android:onClick="click"
+        android:text="选择开启日期"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/edt_order_note_text"
+        app:layout_constraintStart_toStartOf="@+id/edt_order_note_text"
+        app:layout_constraintTop_toBottomOf="@+id/edt_order_note_text" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="返回>"
+        android:onClick="click"
+        app:layout_constraintEnd_toEndOf="@+id/submit"
+        app:layout_constraintTop_toBottomOf="@+id/submit" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
