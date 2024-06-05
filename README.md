@@ -1,2 +1,2 @@
 # time_capsule_android
-Android课设，时间胶囊
+Android，时间胶囊
